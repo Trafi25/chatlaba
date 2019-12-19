@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 });
 
 
-http.listen(PORT, () => {
+app.listen(PORT, () => {
     console.log('Listening on port *: 3000');
 });
 
