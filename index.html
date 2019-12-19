@@ -22,7 +22,7 @@
                 </div>
 
                 <div v-if="!ready">
-                    <h4>Enter your username</h4>
+                    <h4>Веди свой ник для чата</h4>
                     <form @submit.prevent="addUser">
                         <div class="form-group row">
                             <input type="text" class="form-control col-9" v-model="username"
@@ -35,7 +35,7 @@
                 <h2 v-else>{{username}}</h2>
                 <div class="card bg-info" v-if="ready">
                     <div class="card-header text-white">
-                        <h4>My Chat App <span class="float-right">{{connections}} connections</span></h4>
+                        <h4>chatolab <span class="float-right">{{connections}} connections</span></h4>
                     </div>
                     <ul class="list-group list-group-flush text-right">
                         <small v-if="typing" class="text-white">{{typing}} is typing</small>
